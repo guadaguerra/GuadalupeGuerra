@@ -1,19 +1,27 @@
 @charset "UTF-8";
 /* CSS Document */
 @font-face {
-    font-family: OpenSans-regular;
-    src: url('tipografia/OpenSans-Regular.ttf') format('truetype');
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
 }
 
 @font-face {
-    font-family: OpenSans-ExtraBold;
-    src: url('tipografia/OpenSans-ExtraBold.ttf') format('truetype');
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
 }
 
 body {
     margin: 0;
     padding: 0;
 }
+
+nav > ul > li > a:hover {
+    color: blueviolet;
+} 
+
+p {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+}
+
+li {font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"}
 
 body {
     background: url("tipografia/GRx+ç.jpg") no-repeat;
@@ -24,13 +32,22 @@ ul {
     padding: 0;
 }
 
+h1{
+	font-family:"Sugar Death 2";
+	text-align: center
+}
+
+h2{
+	font-family: "Arial Black";
+	text-align: center
+}
 
 nav ul {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    font-family: OpenSans-regular;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
     font-size: 22px;
     list-style: none;
     width: 100%;
