@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: OpenSans-regular;
+    src: url('tipografia/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: OpenSans-ExtraBold;
+    src: url('tipografia/OpenSans-ExtraBold.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("tipografia/GRx+ç.jpg") no-repeat;
+    background-size: cover;
+}
+
+ul {
+    padding: 0;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    font-family: OpenSans-regular;
+    font-size: 22px;
+    list-style: none;
+    width: 100%;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+.cv{
+    display: flex;
+    flex-direction: row;
+}
+
+.columna-grupo{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 5%;
+}
+
+.fotojustin {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.musica {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 900px) {
+    .cv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .columna {
+        width: 90%;
+    }
+
+    .fotojustin {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        display: none;
+    }
+
+    .columna-grupo {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .musica {
+        flex-direction: column;
+    }
+}
